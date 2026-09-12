@@ -53,11 +53,7 @@ This walks through the steps to create a new eslint rule:
 2. In this file, add the rule. Here's a template:
 
     ```ts
-    /*---------------------------------------------------------------------------------------------
-    *  Copyright (c) Microsoft Corporation. All rights reserved.
-    *  Licensed under the MIT License. See License.txt in the project root for license information.
-    *--------------------------------------------------------------------------------------------*/
-
+   
     import * as eslint from 'eslint';
 
     export = new class YourRuleName implements eslint.Rule.RuleModule {
@@ -120,6 +116,6 @@ To add a fix for a custom rule:
 
 2. When reporting an error in the rule, also include a `fix`. This is a function that takes a `fixer` argument and returns one or more fixes.
 
-See the [Double quoted to single quoted string covert fix](https://github.com/microsoft/vscode/blob/b074375e1884ae01033967bf0bbceeaa4795354a/.eslint-plugin-local/code-no-unexternalized-strings.ts#L128) for an example. The ESLint docs also have [details on adding fixes and the fixer api](https://eslint.org/docs/latest/extend/custom-rules#applying-fixes)
+See the [Double quoted to single quoted string covert fix](https://github.com/Unity-Billal-mesloub/vscode/blob/b074375e1884ae01033967bf0bbceeaa4795354a/.eslint-plugin-local/code-no-unexternalized-strings.ts#L128) for an example. The ESLint docs also have [details on adding fixes and the fixer api](https://eslint.org/docs/latest/extend/custom-rules#applying-fixes)
 
 The fixes can be run using `npx eslint --fix` in the VS Code repo
