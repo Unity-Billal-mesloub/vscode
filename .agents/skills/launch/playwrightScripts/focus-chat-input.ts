@@ -1,7 +1,3 @@
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
 
 /* eslint-disable local/code-no-unused-expressions, @stylistic/semi -- playwright-cli requires a bare, unterminated function expression. */
 async page => {
